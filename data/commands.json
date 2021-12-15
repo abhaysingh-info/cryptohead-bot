@@ -1,0 +1,140 @@
+{
+    "show": {
+        "usage": "show <coin>",
+        "what": "To get Information about <coin>. usage : $show bitcoin-cash (make use of '-' instead of ' ' for currencies name containing space or use their initial)",
+        "output": "<author>, information about <coin_name> :\n\nCurrent Price : $<current_price> USD\nMarket Cap : $<market_cap> USD\nMarket Cap Rank : #<market_cap_rank>\nTotal Volume : $<total_volume> USD\n\nTotal Supply : <total_supply>\nMax Supply : <max_supply>\nCirculating Supply : <circulating_supply>\n\n24 hours high : $<24h_high> USD\n24 hours low : $<24h_low> USD\nChange in 24 Hours : $<change_in_24h> USD\n\nChange in 1 Hour (USD): <precent_change_in_1h>%\nChange in 24 Hour (USD): <percent_change_in_24h>%\nChange in 7 days (USD): <percent_change_in_7d>%\nChange in 30 days (USD): <percent_change_in_30d>%\nChange in 1 Year (USD): <percent_change_in_1y>%\n\nLiquidity Score : <liquidity_score>\nCommunity Sore : <community_score>",
+        "scope": [
+            "<author>",
+            "<coin_name>",
+            "<current_price>",
+            "<market_cap>",
+            "<market_cap_rank>",
+            "<total_volume>",
+            "<total_supply>",
+            "<max_supply>",
+            "<circulating_supply>",
+            "<24h_high>",
+            "<24h_low>",
+            "<change_in_24h>",
+            "<change_in_24h_up_down>",
+            "<precent_change_in_1h>",
+            "<percent_change_in_24h>",
+            "<percent_change_in_7d>",
+            "<percent_change_in_30d>",
+            "<percent_change_in_1y>",
+            "<liquidity_score>",
+            "<community_score>"
+        ]
+    },
+    "info": {
+        "usage": "info <coin>",
+        "what": "To get short and sweet information about a <coin>. usage : $info btc",
+        "output": "<author>, <coin_name> (<coin_symbol>) Price Live Data :\nThe live <coin_name> price today is $<current_price> USD with a total volume of $<total_volume> USD. <coin_name> is <change_in_24h_up_down> by $<change_in_24h>% in the last 24 hours. The current CoinGecko ranking is #<market_cap_rank>, with a live market cap of $<market_cap> USD. It has a circulating supply of <circulating_supply> <coin_symbol> coins and a max supply of <max_supply> <coin_symbol> coins.",
+        "scope": [
+            "<author>",
+            "<coin_name>",
+            "<coin_symbol>",
+            "<current_price>",
+            "<market_cap>",
+            "<market_cap_rank>",
+            "<total_volume>",
+            "<total_supply>",
+            "<max_supply>",
+            "<circulating_supply>",
+            "<24h_high>",
+            "<24h_low>",
+            "<change_in_24h>",
+            "<change_in_24h_up_down>",
+            "<precent_change_in_1h>",
+            "<percent_change_in_24h>",
+            "<percent_change_in_7d>",
+            "<percent_change_in_30d>",
+            "<percent_change_in_1y>",
+            "<liquidity_score>",
+            "<community_score>"
+        ]
+    },
+    "help": {
+        "usage": "help",
+        "what": "To get list of all commands available",
+        "output": "<author> \n```This might help you :-) \n\n<help>```",
+        "scope": [
+            "<author>",
+            "<help>"
+        ]
+    },
+    "description": {
+        "usage": "description <coin>",
+        "what": "To get description/history about a coin. usage : $description btc",
+        "output": "<author>, Description about <coin_name>,\n<description>",
+        "scope": [
+            "<author>",
+            "<coin_name>",
+            "<description>"
+        ]
+    },
+    "feeling": {
+        "usage": "feeling <coin>",
+        "what": "Know how market is feeling about this crypto currency. usage : $feeling btc",
+        "output": "<author> on CoinGecko <sentiment_vote_up>% users voted for <coin_name> <emoji>",
+        "scope": [
+            "<author>",
+            "<coin_name>",
+            "<emoji>",
+            "<sentiment_vote_up>"
+        ]
+    },
+    "trending": {
+        "usage": "trending",
+        "what": "This will give you top trending coins on CoinGecko.",
+        "output": "<author>, these are top trending coins on CoinGecko,\n<trending>",
+        "scope": [
+            "<author>",
+            "<trending>"
+        ]
+    },
+    
+    "events": {
+        "usage": "events <country_code> <all_or_none>",
+        "what": "To get list of Upcomming events or previous events (limit : 5). usage : '$events US' or '$events US all'",
+        "output": "<author> this is list of events in <country_initial>\n<events>",
+        "output_on_no_event": "<author>, there is no upcomming events for the country with country code '<country_initial>'...",
+        "scope": [
+            "<country_initial>",
+            "<author>",
+            "<events>"
+        ]
+    },
+    "price": {
+        "usage": "price <coin> <currency_initial>",
+        "what": "To get price of a currency. Usage : '$price btc' or '$price btc inr'.",
+        "output": "<author>, 1 <coin_name> = <currency_value> <currency_initial>",
+        "scope": [
+            "<author>",
+            "<coin_name>",
+            "<currency_value>",
+            "<currency_initial>"
+        ]
+    },
+    "market": {
+        "usage": "market",
+        "what": "To get market data about cryptocurrencies.",
+        "output": "<author> here's market data about cryptocurrencies :\nActive Cryptocurrencies : <active_crypto>\nUpcomming Initial Coin Offering : <upcomming_ico>\nEnded Initial Coin Offering : <ended_ico>\nTotal Markets : <total_market>",
+        "scope": [
+            "<author>",
+            "<active_crypto>",
+            "<upcomming_ico>",
+            "<ended_ico>",
+            "<total_market>"
+        ]
+    },
+    "shares": {
+        "usage": "shares",
+        "what": "To get info about shares of cryptocurrencies by market capitalisation.",
+        "output": "<author> here's market share by capitalization of Cryptocurrencies :\n<shares>",
+        "scope": [
+            "<author>",
+            "<shares>"
+        ]
+    }
+}

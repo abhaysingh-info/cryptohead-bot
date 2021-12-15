@@ -1,0 +1,14 @@
+{
+    "usage_error": {
+        "output": "<author>, usage for <command> is '<command_usage>'",
+        "scope": ["<author>", "<command>", "<command_usage>"]
+    },
+    "coin_not_found_error": {
+        "output":"<author>, Please check spelling of '<coin>' and if it's a coin we cannot find information related to it.",
+        "scope": ["<author>", "<coin>"]
+    },
+    "failed_to_fetch_error": {
+        "output": "Sorry, <author> there was an error in fetching data for you please try again in some times...",
+        "scope": ["<author>"]
+    }
+}
