@@ -1,1 +1,1 @@
-process node index.js
+process pm2 start ~/index.js
